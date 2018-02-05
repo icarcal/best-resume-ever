@@ -103,9 +103,11 @@
       <div class="block-helper"></div>
       <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
-        <p class="info">
-          {{experience.description}}
-        </p>
+        <ul v-for="description in experience.description" :key="description">
+          <li>
+            <span class="normal"> {{description}} </span>
+          </li>
+        </ul>
     </div>
     <div class="section-headline">{{ lang.education }}</div>
     <div class="block" v-for="education in person.education" :key="education.degree">
@@ -280,6 +282,10 @@ h4 {
       font-size:14px;
       font-weight:300;
     }
+    .normal {
+      font-size:14px;
+      font-weight: 100;
+    }
     .info {
       font-size:14px;
       color:rgba(0,0,0,0.870588);
@@ -342,6 +348,7 @@ h4 {
   background-color:#16151c;
   overflow:hidden;
   display:block;
+  padding-bottom: 20px;
   .section-headline {
     color:rgba(255,255,255,0.54);
   }

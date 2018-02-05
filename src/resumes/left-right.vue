@@ -18,7 +18,11 @@
         <span class="company"> {{experience.company}} </span>
         <span class="job-title"> {{experience.position}} </span>
         <span class="time-period"> {{experience.timeperiod}}</span>
-        <span class="job-description"> {{experience.description}} </span>
+        <ul v-for="description in experience.description" :key="description">
+          <li>
+            <span class="job-description"> {{description}} </span>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="contact">

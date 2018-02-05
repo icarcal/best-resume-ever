@@ -27,7 +27,11 @@
 
         <div class="row">
           <span class="time-period"> {{experience.timeperiod}}</span>
-          <span class="job-description">, {{experience.description}} </span>
+          <ul v-for="description in experience.description" :key="description">
+            <li>
+              <span class="job-description">{{description}} </span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -56,15 +60,11 @@
     </div>
     <div class="contact">
       <h3>{{ lang.contact }}</h3>
-      <a :href="'mailto:'+person.contact.email"> {{person.contact.email}}</a>
-      <span>;&nbsp;</span>
-      <a :href="'tel:'+person.contact.phone">{{person.contact.phone}}</a>
-      <span>;&nbsp;</span>
-      <span>{{person.contact.street}}, {{person.contact.city}}</span>
-      <span>;&nbsp;</span>
+      <a :href="'mailto:'+person.contact.email"> {{person.contact.email}}</a><br>
+      <a :href="'tel:'+person.contact.phone">{{person.contact.phone}}</a><br>
+      <span>{{person.contact.street}}, {{person.contact.city}}</span><br>
       <a v-if="person.contact.website" :href="person.contact.website">
-              {{person.contact.website}}</a>
-      <span v-if="person.contact.website">;&nbsp;</span>
+              {{person.contact.website}}</a><br>
       <a v-if="person.contact.github" :href="'https://github.com/'+person.contact.github">
                 https://github.com/{{person.contact.github}}</a>
     </div>

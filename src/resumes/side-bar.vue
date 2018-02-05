@@ -57,7 +57,11 @@
                           <span class="time-period"> {{experience.timeperiod}}</span>
                       </div>
                       <div class="row">
-                          <span class="job-description"> {{experience.description}} </span>
+                        <ul v-for="description in experience.description" :key="description">
+                          <li>
+                            <span class="job-description"> {{description}} </span>
+                          </li>
+                        </ul>
                       </div>
                   </div>
           </div>

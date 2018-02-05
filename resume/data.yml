@@ -1,70 +1,102 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
-  middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+  first: Icaro
+  middle: Caldeira
+  last: Carreira
+about: 28, brasileiro, apaixonado por desenvolvimento, ama estudar, aprender coisas novas
+        ser desafiado e fazer as coisas acontecer
+position: Full Stack Software Developer
 
 birth:
-  year: 1990
-  location: New York
+  year: 1989
+  location: São Paulo, SP
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
+- company: It Model
+  position: CTO
+  timeperiod: desde Setembro / 2014
+  description:
+    - Co-fundador da startup
+    - Responsável por coordenar, planejar e organizar a área de TI da empresa e do time de desenvolvimento
+    - Site e APIs desenvolvidos com PHP, Laravel e MySQL
+    - Chat desenvolvido com Node.js e MySQL
+    - Documentação das APIs gerada com APIdocs
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
+- company: SmartSide
+  position: Desenvolvedor Full Stack Sênior
+  timeperiod: Outubro 2015 - Novembro 2016
+  description:
+    - Responsável pelo planejamento e organização de todas as necessidades de TI da empresa e também pelo time de desenvolvedores
+    - Desenvolvimento de APIs com PHP e Laravel (projetos CrossX, By Your Side)
+    - Desenvolvimento de APIs com a stack MEAN (projetos Tesis, Brazilian Games)
+    - Criação do fluxo de integração contínua para todos os projetos
+    - Criação de testes unitários para todos os projetos
 
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: Itaú
+  position: Analista de Sistemas Júnior
+  timeperiod: Junho 2012 - Outubro 2015
+  description:
+    - Desenvolvimento do front e back-end para o site da empresa
+    - Desenvolvimento de sistemas com Sharepoint 2003, 2007 e C#
+    - Gerar documentação para as features desenvolvidas
+    - No último ano, fui responsável por coordenar um dos times de alta performance
+
+- company: SevenPDV
+  position: Analista de Sistemas Júnior
+  timeperiod: Dezembro 2007 - Junho 2012
+  description:
+    - Desenvolvimento com SQL Server (triggers, functions e procedures)
+    - Geração de relatórios através de queries
+    - Administração das diversas bases (restore, análise de log e tunning da base de dados)
+    - Desenvolvimento de pequenas aplicações com VB6 e VB.Net
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: Universidade Guarulhos
+  timeperiod: Dezembro 2007 - Junho 2012
+  description: Ciência da computação
 
 # skill level goes 0 to 100
 skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
-- name: JavaScript
-  level: 97
+- name: PHP / Laravel / Yii2
+  level: 100
+- name: Javascript
+  level: 90
 - name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
-  level: 80
-- name: ES.Next
-  level: 70
-- name: Docker
+  level: 90
+- name: HTML
   level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: CSS / Less / SASS / Stylus
+  level: 80
+- name: React
+  level: 60
+- name: Vue
+  level: 60
+- name: Angular (1.x)
+  level: 60
+- name: MySQL
+  level: 90
+- name: SQL Server
+  level: 90
+- name: MongoDB
+  level: 70
+- name: Redis
+  level: 70
+- name: Git
+  level: 99
+- name: Gulp / Webpack
+  level: 80
+- name: Continuos Delivery / Continuos Integration
+  level: 80
+
+knowledge: Inglês (Avançado)
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: icaro.caldeira@hotmail.com
+  phone: +55 (11) 97328-0529
+  street: Rua Serra do Quartel, 70
+  city: São Paulo - SP
+  website: https://icarcal.github.io/
+  github: icarcal
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
-lang: en
+lang: pt-br
 `
